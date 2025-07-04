@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Music Downloader Pro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/index-D4ToK5Ti.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-D9-OV2oM.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="nav-logo">
+          <img src="assets/logo.jpg" alt="Logo" />
+          SpotDownload Pro
+        </div>
+        <div>
+          <button
+            class="nav-toggle"
+            id="navToggle"
+            aria-label="Toggle navigation"
+          >
+            ☰
+          </button>
+          <span class="dark-toggle" id="darkToggle">🌙</span>
+        </div>
+        <nav class="nav-links" id="navLinks">
+          <a href="#">Home</a>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1>Download Any Spotify Music Without Premium</h1>
+      <p>
+        Convert tracks, albums & playlists to MP3 or FLAC with high quality in
+        one click
+      </p>
+      <div class="input-container">
+        <input
+          type="text"
+          id="urlInput"
+          placeholder="Paste Spotify link here"
+        />
+        <button id="convertBtn">Convert</button>
+      </div>
+    </section>
+
+    <!-- Loader -->
+    <div class="loader-overlay" id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <section class="download-section">
+      <div class="track-card">
+        <span class="track-index">1</span>
+        <img
+          src="https://i.scdn.co/image/ab67616d0000b273773c5f60bcb309ef8802e4ef"
+          class="track-image"
+          alt="Track Cover"
+          id="trackImage"
+        />
+
+        <div class="track-content">
+          <div>
+            <h3 class="track-title" id="trackTitle">
+              Raanjhan (From "Do Patti")
+            </h3>
+            <p class="track-artist">
+              Artist: <span id="trackArtist">Sachet-Parampara</span>
+            </p>
+          </div>
+          <div class="error-box" id="errorBox" style="display: none">
+            <strong>ERROR:</strong> Unable to fetch
+          </div>
+          <div class="progress-bar-wrapper">
+            <div class="progress-bar-fill" id="progress-bar"></div>
+          </div>
+        </div>
+
+        <form method="post" id="downloadForm">
+          <button class="download-btn" type="submit">
+            <span>Download MP3</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M7 17h10v-2H7zm5-3l4-4l-1.4-1.4l-1.6 1.55V6h-2v4.15L9.4 8.6L8 10zm0 8q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 2.138T12 22"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <h2>Premium Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>High Quality Audio</h3>
+          <p>MP3 320kbps or FLAC with preserved metadata.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Playlist Support</h3>
+          <p>Download entire playlists with one click.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Fast Conversion</h3>
+          <p>Instant processing. No queues.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to-use" id="how-to-use">
+      <h2>How to Use</h2>
+      <div class="how-to-use-steps">
+        <div class="step">
+          <h3>1. Copy Spotify Link</h3>
+          <p>Get the URL of your desired Spotify track, playlist or album.</p>
+        </div>
+        <div class="step">
+          <h3>2. Paste the Link</h3>
+          <p>
+            Paste it in the input box above and click on the Convert button.
+          </p>
+        </div>
+        <div class="step">
+          <h3>3. Download</h3>
+          <p>Wait for conversion and download your music instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-to-use-images">
+      <div class="spoti-img">
+        <img src="/assets/spotify_download_1.png" alt="spotify_download_1" />
+      </div>
+      <div class="spoti-img">
+        <img src="/assets/spotify_download_2.png" alt="spotify_download_2" />
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <h2>How It Works</h2>
+      <div class="how-it-works-steps">
+        <div>
+          <h3>1. Copy URL</h3>
+          <p>Get the Spotify song, playlist, or album link.</p>
+        </div>
+        <div>
+          <h3>2. Paste in Box</h3>
+          <p>Enter it in the converter and click convert.</p>
+        </div>
+        <div>
+          <h3>3. Download</h3>
+          <p>Save high-quality music instantly.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <h3>Is this service legal to use?</h3>
+        <p>
+          This tool is for personal use only. Ensure you comply with your local
+          copyright regulations.
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>Do I need a Spotify Premium account?</h3>
+        <p>No. The tool works with free Spotify accounts as well.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What formats are supported?</h3>
+        <p>We support MP3 (320kbps) and FLAC formats with metadata.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Can I download playlists or albums?</h3>
+        <p>Yes, entire playlists and albums are supported.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <h4>SpotDownload Pro</h4>
+          <p>Download Spotify songs in high quality without premium.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
