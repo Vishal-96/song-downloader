@@ -29,7 +29,7 @@
     />
     
     <style>
-:root{--bg-light: #f8fafc;--bg-dark: #0f172a;--text-light: #1f2937;--text-dark: #f9fafb;--card-light: #ffffff;--card-dark: #1e293b;--muted-light: #6b7280;--muted-dark: #d1d5db;--bg-color: #f9f9f9;--text-color: #1a1a1a;--subtext-color: #555;--card-bg: #ffffff;--border-color: #ddd;--error-bg: #fff3cd;--error-text: #856404;--progress-bg: #e0e0e0;--progress-fill: #28a745;--btn-bg: #e63946;--btn-hover: #c72d3f;--btn-text: #fff}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,sans-serif;background-color:var(--bg-light);color:var(--text-light);transition:background .3s,color .3s}body.dark{background-color:var(--bg-dark);color:var(--text-dark)}a{text-decoration:none;color:inherit}img{max-width:100%;height:auto}.container{max-width:1200px;margin:0 auto;padding:0 1rem}.spoti-img{margin-bottom:2rem}.spoti-img img{width:100%;height:auto}.header{background:var(--card-light);border-bottom:1px solid #e5e7eb;padding:1rem 0;position:sticky;top:0;z-index:50;transition:background .3s}body.dark .header{background:var(--card-dark)}.nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.nav-logo{display:flex;align-items:center;font-size:1.25rem;font-weight:700}.nav-logo img{height:40px;width:40px;margin-right:.5rem}.nav-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer}.nav-links{display:flex;gap:1rem}.nav-links a{font-weight:500;transition:color .3s}.nav-links a:hover{color:#1db954}.dark-toggle{cursor:pointer;font-size:1.2rem;margin-left:1rem}.hero{background:linear-gradient(135deg,#1db954,#1ed760);color:#fff;text-align:center;padding:4rem 1rem}.hero h1{font-size:2rem}.input-container{background:var(--card-light);padding:.5rem;border-radius:.5rem;display:flex;flex-direction:row;max-width:600px;margin:2rem auto;box-shadow:0 10px 25px #0000001a;transition:background .3s}body.dark .input-container{background:var(--card-dark)}.input-container input{flex:1;padding:.75rem;border:none;border-radius:.5rem 0 0 .5rem;font-size:1rem}.input-container button{background:#1db954;color:#fff;padding:0 1.5rem;border:none;border-radius:0 .5rem .5rem 0;cursor:pointer;font-weight:600}.features,.faq,.how-it-works{padding:4rem 1rem;background:var(--card-light);transition:background .3s}body.dark .features,body.dark .faq,body.dark .how-it-works{background:var(--card-dark)}.features h2,.faq h2,.how-it-works h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem}.features-grid,.how-it-works-steps{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));text-align:center}.feature-card,.how-it-works-steps div{background:#f9fafb;border-radius:.5rem;padding:1.5rem;box-shadow:0 4px 10px #0000000d;transition:transform .3s,background .3s}body.dark .feature-card,body.dark .how-it-works-steps div{background:#334155}.faq-item{max-width:700px;margin:1rem auto;border-bottom:1px solid #e5e7eb;padding-bottom:1rem}.faq-item p{color:var(--muted-light)}body.dark .faq-item p{color:var(--muted-dark)}.footer{background:#1f2937;color:#fff;padding:3rem 1rem;transition:background .3s,color .3s}body.dark .footer{background:#0f172a;color:#f9fafb}.footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}.footer h4{font-weight:600;margin-bottom:1rem}.footer ul{list-style:none}.footer ul li{margin-bottom:.5rem}.footer ul li a{color:#d1d5db}.footer ul li a:hover{color:#1db954}.how-to-use{padding:4rem 1rem;background:var(--card-light);transition:background .3s}body.dark .how-to-use{background:var(--card-dark)}.how-to-use h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem}.how-to-use-steps{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}.how-to-use-steps .step{background:#f9fafb;padding:2rem;border-radius:.5rem;box-shadow:0 4px 10px #0000000d}body.dark .how-to-use-steps .step{background:#334155}.how-to-use-steps .step h3{font-size:1.25rem;margin-bottom:.5rem}.how-to-use-steps .step p{color:var(--muted-light)}body.dark .how-to-use-steps .step p{color:var(--muted-dark)}.how-to-use-images{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2rem 1rem}@media (max-width: 768px){.how-to-use-images{grid-template-columns:1fr}.hero h1{font-size:1.5rem}.input-container{flex-direction:column}.input-container input,.input-container button{width:100%;border-radius:.5rem}.input-container button{margin-top:.5rem}.nav-toggle{display:block}.nav-links{display:none;flex-direction:column;width:100%;text-align:center;gap:.75rem;padding-top:1rem}.nav-links.active{display:flex}}.loader-overlay{position:fixed;inset:0;background:#fffc;display:flex;align-items:center;justify-content:center;z-index:9999;display:none;transition:background .3s}body.dark .loader-overlay{background:#0f172acc}.spinner{width:50px;height:50px;border:5px solid #ccc;border-top:5px solid #1db954;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-color-scheme: dark){:root{--bg-color: #121212;--text-color: #f5f5f5;--subtext-color: #bbb;--card-bg: #1f1f1f;--border-color: #333;--error-bg: #4b3b00;--error-text: #ffcd56;--progress-bg: #2b2b2b;--progress-fill: #28a745;--btn-bg: #e63946;--btn-hover: #c72d3f;--btn-text: #fff}}.download-section{max-width:900px;margin:3rem auto;padding:1rem}.track-card{position:relative;display:flex;flex-direction:row;background-color:var(--card-bg);border:1px solid var(--border-color);border-radius:12px;overflow:hidden;box-shadow:0 4px 16px #0000000f;transition:transform .2s ease}.track-card:hover{transform:translateY(-3px)}.track-image{width:140px;object-fit:cover}.track-content{flex:1;padding:1rem;display:flex;flex-direction:column;justify-content:space-between}.track-title{font-size:1.3rem;font-weight:600;color:var(--subtext-color);margin:0}.track-artist{margin-top:.3rem;font-size:.95rem;color:var(--subtext-color)}.track-artist span{font-weight:600;color:var(--btn-text)}.error-box{margin-top:.8rem;font-size:.85rem;background-color:var(--error-bg);color:var(--error-text);padding:.5rem .8rem;border-radius:6px}.progress-bar-wrapper{margin-top:.6rem;background-color:var(--progress-bg);height:6px;border-radius:4px;overflow:hidden}.progress-bar-fill{height:100%;width:0%;background-color:var(--progress-fill);transition:width .3s ease}.download-btn{position:absolute;top:1rem;right:1rem;background-color:var(--btn-bg);color:var(--btn-text);border:none;padding:.5rem 1rem;border-radius:6px;font-size:.9rem;font-weight:500;display:flex;align-items:center;gap:.4rem;cursor:pointer;z-index:10}.download-btn:hover{background-color:var(--btn-hover)}.track-index{position:absolute;top:.6rem;left:.8rem;background:#0009;color:#fff;font-size:.8rem;padding:.2rem .5rem;border-radius:4px;z-index:10}@media (max-width: 768px){.track-card{flex-direction:column}.track-image{width:100%;height:180px}.download-btn{position:static;margin:1rem auto 0;width:90%;justify-content:center}.track-index{top:.8rem;left:.8rem}}
+:root{--bg-light: #f8fafc;--bg-dark: #0f172a;--text-light: #1f2937;--text-dark: #f9fafb;--card-light: #ffffff;--card-dark: #1e293b;--muted-light: #6b7280;--muted-dark: #d1d5db;--bg-color: #f9f9f9;--text-color: #1a1a1a;--subtext-color: #555;--card-bg: #ffffff;--border-color: #ddd;--error-bg: #fff3cd;--error-text: #856404;--progress-bg: #e0e0e0;--progress-fill: #28a745;--btn-bg: #e63946;--btn-hover: #c72d3f;--btn-text: #fff}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Inter,sans-serif;background-color:var(--bg-light);color:var(--text-light);transition:background .3s,color .3s}body.dark{background-color:var(--bg-dark);color:var(--text-dark)}a{text-decoration:none;color:inherit}img{max-width:100%;height:auto}.container{max-width:1200px;margin:0 auto;padding:0 1rem}.spoti-img{margin-bottom:2rem}.spoti-img img{width:100%;height:auto}.header{background:var(--card-light);border-bottom:1px solid #e5e7eb;padding:1rem 0;position:sticky;top:0;z-index:50;transition:background .3s}body.dark .header{background:var(--card-dark)}.nav{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}.nav-logo{display:flex;align-items:center;font-size:1.25rem;font-weight:700}.nav-logo img{height:40px;width:40px;margin-right:.5rem}.nav-toggle{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer}.nav-links{display:flex;gap:1rem}.nav-links a{font-weight:500;transition:color .3s}.nav-links a:hover{color:#1db954}.dark-toggle{cursor:pointer;font-size:1.2rem;margin-left:1rem}.hero{background:linear-gradient(135deg,#1db954,#1ed760);color:#fff;text-align:center;padding:4rem 1rem}.hero h1{font-size:2rem}.input-container{background:var(--card-light);padding:.5rem;border-radius:.5rem;display:flex;flex-direction:row;max-width:600px;margin:2rem auto;box-shadow:0 10px 25px #0000001a;transition:background .3s}body.dark .input-container{background:var(--card-dark)}.input-container input{flex:1;padding:.75rem;border:none;border-radius:.5rem 0 0 .5rem;font-size:1rem}.input-container button{background:#1db954;color:#fff;padding:0 1.5rem;border:none;border-radius:0 .5rem .5rem 0;cursor:pointer;font-weight:600}.features,.faq,.how-it-works{padding:4rem 1rem;background:var(--card-light);transition:background .3s}body.dark .features,body.dark .faq,body.dark .how-it-works{background:var(--card-dark)}.features h2,.faq h2,.how-it-works h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem}.features-grid,.how-it-works-steps{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));text-align:center}.feature-card,.how-it-works-steps div{background:#f9fafb;border-radius:.5rem;padding:1.5rem;box-shadow:0 4px 10px #0000000d;transition:transform .3s,background .3s}body.dark .feature-card,body.dark .how-it-works-steps div{background:#334155}.faq-item{max-width:700px;margin:1rem auto;border-bottom:1px solid #e5e7eb;padding-bottom:1rem}.faq-item p{color:var(--muted-light)}body.dark .faq-item p{color:var(--muted-dark)}.footer{background:#1f2937;color:#fff;padding:3rem 1rem;transition:background .3s,color .3s}body.dark .footer{background:#0f172a;color:#f9fafb}.footer .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}.footer h4{font-weight:600;margin-bottom:1rem}.footer ul{list-style:none}.footer ul li{margin-bottom:.5rem}.footer ul li a{color:#d1d5db}.footer ul li a:hover{color:#1db954}.how-to-use{padding:4rem 1rem;background:var(--card-light);transition:background .3s}body.dark .how-to-use{background:var(--card-dark)}.how-to-use h2{text-align:center;font-size:2rem;font-weight:700;margin-bottom:2rem}.how-to-use-steps{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));text-align:center}.how-to-use-steps .step{background:#f9fafb;padding:2rem;border-radius:.5rem;box-shadow:0 4px 10px #0000000d}body.dark .how-to-use-steps .step{background:#334155}.how-to-use-steps .step h3{font-size:1.25rem;margin-bottom:.5rem}.how-to-use-steps .step p{color:var(--muted-light)}body.dark .how-to-use-steps .step p{color:var(--muted-dark)}.how-to-use-images{display:grid;grid-template-columns:1fr 1fr;gap:2rem;padding:2rem 1rem}@media (max-width: 768px){.how-to-use-images{grid-template-columns:1fr}.hero h1{font-size:1.5rem}.input-container{flex-direction:column}.input-container input,.input-container button{width:100%;border-radius:.5rem}.input-container button{margin-top:.5rem}.nav-toggle{display:block}.nav-links{display:none;flex-direction:column;width:100%;text-align:center;gap:.75rem;padding-top:1rem}.nav-links.active{display:flex}}.loader-overlay{position:fixed;inset:0;background:#fffc;display:flex;align-items:center;justify-content:center;z-index:9999;display:none;transition:background .3s}body.dark .loader-overlay{background:#0f172acc}.spinner{width:50px;height:50px;border:5px solid #ccc;border-top:5px solid #1db954;border-radius:50%;animation:spin 1s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}@media (prefers-color-scheme: dark){:root{--bg-color: #121212;--text-color: #f5f5f5;--subtext-color: #bbb;--card-bg: #1f1f1f;--border-color: #333;--error-bg: #4b3b00;--error-text: #ffcd56;--progress-bg: #2b2b2b;--progress-fill: #28a745;--btn-bg: #e63946;--btn-hover: #c72d3f;--btn-text: #fff}}.download-section{max-width:900px;margin:3rem auto;padding:1rem}.track-card{position:relative;display:flex;flex-direction:row;background-color:var(--card-bg);border:1px solid var(--border-color);border-radius:12px;overflow:hidden;box-shadow:0 4px 16px #0000000f;transition:transform .2s ease}.track-card:hover{transform:translateY(-3px)}.track-image{width:140px;object-fit:cover}.track-content{flex:1;padding:1rem;display:flex;flex-direction:column;justify-content:space-between}.track-title{font-size:1.3rem;font-weight:600;color:var(--subtext-color);margin:0}.track-artist{margin-top:.3rem;font-size:.95rem;color:var(--subtext-color)}.track-artist span{font-weight:600;color:var(--btn-text)}.error-box{margin-top:.8rem;font-size:.85rem;background-color:var(--error-bg);color:var(--error-text);padding:.5rem .8rem;border-radius:6px}.progress-bar-wrapper{margin-top:.6rem;background-color:var(--progress-bg);height:6px;border-radius:4px;overflow:hidden}.progress-bar-fill{height:100%;width:0%;background-color:var(--progress-fill);transition:width .3s ease}.download-btn{position:absolute;top:1rem;right:1rem;background-color:var(--btn-bg);color:var(--btn-text);border:none;padding:.5rem 1rem;border-radius:6px;font-size:.9rem;font-weight:500;display:flex;align-items:center;gap:.4rem;cursor:pointer;z-index:10}.download-btn:hover{background-color:var(--btn-hover)}.track-index{position:absolute;top:.6rem;left:.8rem;background:#0009;color:#fff;font-size:.8rem;padding:.2rem .5rem;border-radius:4px;z-index:10}@media (max-width: 768px){.track-card{flex-direction:column}.track-image{width:100%;height:180px}.download-btn{position:static;margin:1rem auto 0;width:90%;justify-content:center}.track-index{top:.8rem;left:.8rem}}.info-section{padding:4rem 1rem;background:var(--card-light);transition:background .3s;text-align:center}body.dark .info-section{background:var(--card-dark)}.info-section h2{font-size:2rem;margin-bottom:1rem}.info-section p{max-width:800px;margin:0 auto;color:var(--muted-light)}body.dark .info-section p{color:var(--muted-dark)}.benefits,.why-us{padding:4rem 1rem;background:var(--card-light);transition:background .3s}body.dark .benefits,body.dark .why-us{background:var(--card-dark)}.benefits h2,.why-us h2{text-align:center;font-size:2rem;margin-bottom:2rem}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}.card{background:#f9fafb;padding:1.5rem;border-radius:.5rem;box-shadow:0 4px 10px #0000000d;transition:background .3s,transform .3s}.card:hover{transform:translateY(-4px)}body.dark .card{background:#334155}.card h3{margin-bottom:.5rem;font-size:1.25rem}.cta{padding:4rem 1rem;text-align:center;background:linear-gradient(135deg,#1db954,#1ed760);color:#fff}.cta h2{font-size:2rem;margin-bottom:1rem}.cta p{margin-bottom:2rem;font-size:1.1rem}.cta-btn{display:inline-block;background:#fff;color:#1db954;padding:.75rem 2rem;border-radius:.5rem;font-weight:600;transition:background .3s,color .3s}.cta-btn:hover{background:#1db954;color:#fff}
 
 </style>
   </head>
@@ -52,25 +52,25 @@
         </div>
         <nav class="nav-links" id="navLinks">
           <a href="#">Home</a>
-          <a href="#features">Features</a>
+          <a href="#what-is">What Is</a>
+          <a href="#how-to-use">How To Use</a>
+          <a href="#benefits">Benefits</a>
+          <a href="#why-us">Why Us</a>
           <a href="#how-it-works">How It Works</a>
           <a href="#faq">FAQ</a>
         </nav>
       </div>
     </header>
 
+    <!-- Hero / Introduction -->
     <section class="hero">
       <h1>Download Any Spotify Music Without Premium</h1>
       <p>
-        Convert tracks, albums & playlists to MP3 or FLAC with high quality in
-        one click
+        Looking for an easy way to download your favorite Spotify tracks? You're at the right place!<br />
+        With SpotDownload Pro, you can securely convert Spotify songs, albums & playlists to MP3 format for free.
       </p>
       <div class="input-container">
-        <input
-          type="text"
-          id="urlInput"
-          placeholder="Paste Spotify link here"
-        />
+        <input type="text" id="urlInput" placeholder="Paste Spotify link here" />
         <button id="convertBtn">Convert</button>
       </div>
     </section>
@@ -80,7 +80,8 @@
       <div class="spinner"></div>
     </div>
 
-    <section class="download-section">
+    <!-- Download section -->
+     <section class="download-section">
       <div class="track-card">
         <span class="track-index">1</span>
         <img
@@ -125,94 +126,103 @@
       </div>
     </section>
 
-    <section class="features" id="features">
-      <h2>Premium Features</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>High Quality Audio</h3>
-          <p>MP3 320kbps or FLAC with preserved metadata.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Playlist Support</h3>
-          <p>Download entire playlists with one click.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Fast Conversion</h3>
-          <p>Instant processing. No queues.</p>
-        </div>
+    <!-- What is Spotify Downloader -->
+    <section class="info-section" id="what-is">
+      <div class="container">
+        <h2>What is Spotify Music Downloader?</h2>
+        <p>
+          A Spotify music downloader is an online tool that allows users to download songs, albums, or playlists from Spotify directly to their devices in MP3 format. 
+          Our SpotDownload Pro ensures high-quality MP3 downloads without requiring any software installation. 
+          Just paste your Spotify track or playlist link and download with one click — it’s that simple.
+        </p>
       </div>
     </section>
 
+    <!-- How to Use -->
     <section class="how-to-use" id="how-to-use">
-      <h2>How to Use</h2>
+      <h2>How to Use the Spotify MP3 Downloader</h2>
       <div class="how-to-use-steps">
         <div class="step">
           <h3>1. Copy Spotify Link</h3>
-          <p>Get the URL of your desired Spotify track, playlist or album.</p>
+          <p>Open Spotify and copy the URL of the track, album, or playlist you want to download.</p>
         </div>
         <div class="step">
           <h3>2. Paste the Link</h3>
-          <p>
-            Paste it in the input box above and click on the Convert button.
-          </p>
+          <p>Paste it in the input box above and click on the Convert button.</p>
         </div>
         <div class="step">
           <h3>3. Download</h3>
-          <p>Wait for conversion and download your music instantly.</p>
+          <p>Wait for conversion and download your music instantly in MP3 format.</p>
+        </div>
+        <div class="step">
+          <h3>4. Save</h3>
+          <p>Save the file to your device and enjoy offline listening!</p>
         </div>
       </div>
     </section>
 
-    <section class="how-to-use-images">
-      <div class="spoti-img">
-        <img src="/assets/spotify_download_1.png" alt="spotify_download_1" />
-      </div>
-      <div class="spoti-img">
-        <img src="/assets/spotify_download_2.png" alt="spotify_download_2" />
+    <!-- Benefits -->
+    <section class="benefits" id="benefits">
+      <div class="container">
+        <h2>Benefits of Using Spotify Downloader Online</h2>
+        <div class="grid">
+          <div class="card"><h3>Free & Unlimited</h3><p>Download as many songs as you want without limits or hidden costs.</p></div>
+          <div class="card"><h3>High Quality MP3</h3><p>Get MP3 files up to 320kbps, preserving sound clarity.</p></div>
+          <div class="card"><h3>No Installation</h3><p>Fully web-based, no apps or plugins needed.</p></div>
+          <div class="card"><h3>Cross-Platform</h3><p>Works smoothly on Windows, Mac, Android, and iOS.</p></div>
+          <div class="card"><h3>Safe & Secure</h3><p>No registration required. Your downloads remain private.</p></div>
+          <div class="card"><h3>Fast Speeds</h3><p>Lightning-fast conversion and downloads for playlists and albums.</p></div>
+          <div class="card"><h3>Playlist & Album Support</h3><p>Download individual tracks, albums, or entire playlists.</p></div>
+          <div class="card"><h3>Beginner-Friendly</h3><p>Clean and intuitive interface, no technical skills required.</p></div>
+          <div class="card"><h3>Regular Updates</h3><p>Our system stays updated with Spotify’s latest changes.</p></div>
+        </div>
       </div>
     </section>
 
+    <!-- Why Us -->
+    <section class="why-us" id="why-us">
+      <div class="container">
+        <h2>Why Use Our Spotify Music Downloader Instead of Others?</h2>
+        <div class="grid">
+          <div class="card"><h3>Truly Free</h3><p>100% free with no sign-ups, subscriptions, or hidden costs.</p></div>
+          <div class="card"><h3>Reliable Downloads</h3><p>Download full albums & playlists consistently without failures.</p></div>
+          <div class="card"><h3>Clean Experience</h3><p>No popups, no misleading ads. Just music.</p></div>
+          <div class="card"><h3>Privacy First</h3><p>We never track or store your downloads. Total anonymity.</p></div>
+          <div class="card"><h3>Global Access</h3><p>Use it from anywhere in the world without restrictions.</p></div>
+          <div class="card"><h3>Regular Updates</h3><p>Always maintained to work with Spotify’s latest updates.</p></div>
+          <div class="card"><h3>One-Click Simplicity</h3><p>Copy, paste, click — and your music is ready.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it Works -->
     <section class="how-it-works" id="how-it-works">
       <h2>How It Works</h2>
       <div class="how-it-works-steps">
-        <div>
-          <h3>1. Copy URL</h3>
-          <p>Get the Spotify song, playlist, or album link.</p>
-        </div>
-        <div>
-          <h3>2. Paste in Box</h3>
-          <p>Enter it in the converter and click convert.</p>
-        </div>
-        <div>
-          <h3>3. Download</h3>
-          <p>Save high-quality music instantly.</p>
-        </div>
+        <div><h3>1. Copy URL</h3><p>Get the Spotify song, playlist, or album link.</p></div>
+        <div><h3>2. Paste in Box</h3><p>Enter it in the converter and click convert.</p></div>
+        <div><h3>3. Download</h3><p>Save high-quality music instantly.</p></div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="faq" id="faq">
       <h2>Frequently Asked Questions</h2>
-      <div class="faq-item">
-        <h3>Is this service legal to use?</h3>
-        <p>
-          This tool is for personal use only. Ensure you comply with your local
-          copyright regulations.
-        </p>
-      </div>
-      <div class="faq-item">
-        <h3>Do I need a Spotify Premium account?</h3>
-        <p>No. The tool works with free Spotify accounts as well.</p>
-      </div>
-      <div class="faq-item">
-        <h3>What formats are supported?</h3>
-        <p>We support MP3 (320kbps) and FLAC formats with metadata.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Can I download playlists or albums?</h3>
-        <p>Yes, entire playlists and albums are supported.</p>
-      </div>
+      <div class="faq-item"><h3>Is it legal to use a Spotify downloader?</h3><p>Our tool is for personal use only. Downloading copyrighted content for commercial use is not allowed. Please respect Spotify’s terms of service.</p></div>
+      <div class="faq-item"><h3>Do I need a Spotify Premium account to download songs?</h3><p>No, our Spotify downloader works with both free and premium accounts.</p></div>
+      <div class="faq-item"><h3>Can I download entire playlists using Spotify Downloader?</h3><p>Yes! Download individual tracks, albums, or full playlists in MP3 format.</p></div>
+      <div class="faq-item"><h3>What devices are supported?</h3><p>Works on Windows, Mac, Android, and iOS. If you have a browser, you can use it.</p></div>
+      <div class="faq-item"><h3>Is the download quality good?</h3><p>Yes, you’ll get high-quality MP3 files (up to 320kbps) for the best listening experience.</p></div>
     </section>
 
+    <!-- CTA -->
+    <section class="cta">
+      <h2>Try the Best Spotify Downloader Today</h2>
+      <p>No sign-ups. No software. Just music.<br />Download your favorite Spotify songs online quickly and for free.</p>
+      <a href="#urlInput" class="cta-btn">Start Downloading</a>
+    </section>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div>
@@ -244,6 +254,7 @@
         </div>
       </div>
     </footer>
+
   <script type="module">
 (function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const t of document.querySelectorAll('link[rel="modulepreload"]'))s(t);new MutationObserver(t=>{for(const n of t)if(n.type==="childList")for(const l of n.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function o(t){const n={};return t.integrity&&(n.integrity=t.integrity),t.referrerPolicy&&(n.referrerPolicy=t.referrerPolicy),t.crossOrigin==="use-credentials"?n.credentials="include":t.crossOrigin==="anonymous"?n.credentials="omit":n.credentials="same-origin",n}function s(t){if(t.ep)return;t.ep=!0;const n=o(t);fetch(t.href,n)}})();var m="https://yifxcj6uvlpoka47reaolhcdpm0kdmce.lambda-url.us-east-1.on.aws/api";const y=document.getElementById("navToggle"),f=document.getElementById("navLinks"),u=document.getElementById("darkToggle"),g=document.getElementById("convertBtn"),p=document.getElementById("downloadForm"),c=document.getElementById("loader"),i=document.getElementById("errorBox"),v=document.getElementById("trackImage"),h=document.getElementById("trackTitle"),I=document.getElementById("trackArtist"),a=document.getElementById("progress-bar"),d=document.getElementById("urlInput");async function k(r){const e="songs/getTrackData?song_url="+r,o=await L(e);if(!o)return alert("Failed to fetch data. Please try again."),d.value="",c.style.display="none",!1;const{artistName:s,songName:t,images:n}=o.songDetails;return v.src=n[0].url,h.innerHTML=t,I.innerHTML=s,c.style.display="none",!0}function E(r){return/^https:\/\/open\.spotify\.com\/track\/[a-zA-Z0-9]+(\?si=[a-zA-Z0-9]+)?$/.test(r)}async function L(r){try{const e={method:"GET",headers:{"Content-Type":"application/json"}},o=await fetch(`${m}/${r}`,e);if(!o.ok)throw new Error(`HTTP error! Status: ${o.status} - ${o.statusText}`);return await o.json()}catch(e){return console.error("Fetch failed:",e.message),null}}g.addEventListener("click",r=>{r.preventDefault();const e=d.value.trim();if(!E(e)){d.value="",alert("Please enter a valid Spotify URL");return}i.style.display="none",c.style.display="flex",k(e)});p.addEventListener("submit",B);y.addEventListener("click",()=>{f.classList.toggle("active")});u.addEventListener("click",()=>{document.body.classList.toggle("dark"),u.textContent=document.body.classList.contains("dark")?"☀️":"🌙"});async function B(r){r.preventDefault(),i.style.display="none";let e=0;a.style.width="0%",a.style.backgroundColor="#28a745";const o=Math.floor(Math.random()*51)+40,s=setInterval(()=>{if(e+=2,e>=o&&e<100){clearInterval(s),console.error(`Download failed at ${e}%`),a.style.backgroundColor="red",i.style.display="block";return}a.style.width=`${e}%`,e>=100&&(clearInterval(s),console.log("Download completed successfully"))},300)}
 
